@@ -5,7 +5,7 @@ date: 2017-03-30
 ---
 
 
-#Understanding Tensors and Graphs before diving into TensorFlow
+##Understanding Tensors and Graphs before diving into TensorFlow
 
 TensorFlow the latest from Google for deep learning libraries. I started learning it some days back and already started having fun with it! Before we deep dive into tensorFlow a good knowledge of tensors and graphs are preferred as those are the two basic building blocks of the TensorFlow in Google’s deep learning framework.
 
