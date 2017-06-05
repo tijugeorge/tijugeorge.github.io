@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tiju George, Pyhtonic short way of reversing digits of a number with constraint"
+title: "Tiju George, Pythonic short way of reversing digits of a number with constraint"
 date: 2017-06-05
 ---
 
