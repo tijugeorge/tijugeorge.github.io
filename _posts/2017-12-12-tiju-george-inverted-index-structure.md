@@ -7,6 +7,8 @@ date: 2017-12-12
 ##Inverted Index Structure learning python code
 
 ```python
+
+
 import re
 import random
 import pandas as pd
@@ -46,6 +48,7 @@ df.index+=1
 df.index.name = 'Index'
 
 print(df)
+```
 
 Result is 
 
