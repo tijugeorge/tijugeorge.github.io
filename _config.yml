@@ -1,3 +1,14 @@
-name: Tiju George, Aspiring Full Stack Developer-Software Engineer
+name: Tiju George
+title: Tiju George | AI Product & Software Engineering
+description: Personal portfolio and technical engine showcase.
+url: "https://tijugeorge.github.io"
+
+# Build settings
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Exclude unneeded folders from Jekyll build
+exclude:
+  - README.md
+  - coverletter/
