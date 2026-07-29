@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tiju George | AI Product & Engineering</title>
-  <!-- Link to your CSS file inside the css folder -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Modern Inter Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+---
+layout: default
+title: Tiju George | AI Product & Software Engineering
+---
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="logo">TG<span class="dot">.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#contributions">Contributions</a>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Insights</a>
-        <a href="#contact" class="btn-primary">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="about" class="hero">
-    <div class="container">
+<!-- Hero Section -->
+<section id="about" class="hero">
+  <div class="container hero-layout">
+    <div class="hero-text">
       <span class="badge">AI & Software Engineering</span>
       <h1>Architecting Intelligent Systems & Autonomous Engines</h1>
       <p class="hero-sub">
@@ -40,99 +17,91 @@
         <a href="https://github.com/tijugeorge" target="_blank" class="btn-secondary">GitHub Profile</a>
       </div>
     </div>
-  </section>
+    
+    <!-- Profile Photo Slot (Drop photo in /img/profile.jpg) -->
+    <div class="hero-avatar">
+      <img src="{{ "/img/profile.jpg" | relative_url }}" alt="Tiju George" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
 
-  <!-- EB-1A Focus: Original Contributions -->
-  <section id="contributions" class="section alt-bg">
-    <div class="container">
-      <h2 class="section-title">Major Technical Contributions</h2>
-      <p class="section-sub">Key architectures and original frameworks of industry impact.</p>
+<!-- EB-1A Focus: Original Contributions of Major Significance -->
+<section id="contributions" class="section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Major Technical Contributions</h2>
+    <p class="section-sub">Key architectures and original frameworks designed for industry impact.</p>
 
-      <div class="grid grid-2">
-        <div class="card card-featured">
-          <span class="card-tag">Core Platform</span>
-          <h3>RCaaS Autonomous Verification Engine</h3>
-          <p>
-            An autonomous verification engine engineered to streamline continuous compliance, validation pipelines, and system reliability for complex software architectures.
-          </p>
-          <ul class="tag-list">
-            <li>Python</li>
-            <li>AI Verification</li>
-            <li>System Design</li>
-          </ul>
-        </div>
+    <div class="grid grid-2">
+      <div class="card card-featured">
+        <span class="card-tag">Core Platform</span>
+        <h3>RCaaS Autonomous Verification Engine</h3>
+        <p>
+          An autonomous verification engine engineered to streamline continuous compliance, validation pipelines, and system reliability for complex software architectures.
+        </p>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>AI Verification</li>
+          <li>System Design</li>
+        </ul>
+      </div>
 
-        <div class="card card-featured">
-          <span class="card-tag">Research & Spec</span>
-          <h3>AI & Quantum Systems Product Frameworks</h3>
-          <p>
-            Methodologies and architectural blueprints for deploying product management frameworks across non-deterministic AI models and quantum computing systems.
-          </p>
-          <ul class="tag-list">
-            <li>Quantum Computing</li>
-            <li>AI Strategy</li>
-            <li>GRC & Compliance</li>
-          </ul>
-        </div>
+      <div class="card card-featured">
+        <span class="card-tag">Research & Spec</span>
+        <h3>AI & Quantum Systems Product Frameworks</h3>
+        <p>
+          Methodologies and architectural blueprints for deploying product management frameworks across non-deterministic AI models and quantum computing systems.
+        </p>
+        <ul class="tag-list">
+          <li>Quantum Computing</li>
+          <li>AI Strategy</li>
+          <li>GRC & Compliance</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Selected Projects</h2>
+<!-- Selected Projects -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Selected Projects</h2>
 
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Healthcare GRC Pipelines</h3>
-          <p>Enterprise data pipelines and system modeling designed for regulatory compliance and large-scale data workflows.</p>
-          <span class="tech-stack">Python • Data Engineering</span>
-        </div>
-        <div class="card">
-          <h3>Real-time Aviation Telemetry</h3>
-          <p>Hardware and software integration project tracking local flight vectors and spatial telemetry via low-power hardware.</p>
-          <span class="tech-stack">Raspberry Pi • Python • IoT</span>
-        </div>
-        <div class="card">
-          <h3>E-Commerce & Digital Ops</h3>
-          <p>Custom e-commerce infrastructure supporting streamlined digital cataloging and automated inventory syncing.</p>
-          <span class="tech-stack">Square API • Web Architecture</span>
-        </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Healthcare GRC Pipelines</h3>
+        <p>Enterprise data pipelines and system modeling designed for regulatory compliance and large-scale data workflows.</p>
+        <span class="tech-stack">Python • Data Engineering</span>
+      </div>
+      <div class="card">
+        <h3>Real-time Aviation Telemetry</h3>
+        <p>Hardware and software integration project tracking local flight vectors and spatial telemetry via low-power hardware.</p>
+        <span class="tech-stack">Raspberry Pi • Python • IoT</span>
+      </div>
+      <div class="card">
+        <h3>E-Commerce & Digital Ops</h3>
+        <p>Custom e-commerce infrastructure supporting streamlined digital cataloging and automated inventory syncing.</p>
+        <span class="tech-stack">Square API • Web Architecture</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Writing / Articles -->
-  <section id="writing" class="section alt-bg">
-    <div class="container">
-      <h2 class="section-title">Technical Insights</h2>
-      
-      <div class="grid grid-2">
+<!-- Dynamic Technical Blog (Loads files from _posts folder) -->
+<section id="writing" class="section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Technical Insights & Writing</h2>
+    <p class="section-sub">Published technical articles, algorithm analyses, and system writeups.</p>
+    
+    <div class="grid grid-2">
+      {% for post in site.posts %}
         <article class="post-card">
-          <span class="post-date">2026</span>
-          <h3>Evaluating Determinism in AI Verification Engines</h3>
-          <p>How automated verification models maintain structural reliability when working with LLMs and probabilistic systems.</p>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
         </article>
-        <article class="post-card">
-          <span class="post-date">2026</span>
-          <h3>The Product Lifecycle of Quantum Algorithms</h3>
-          <p>Navigating the transition from theoretical physics models to enterprise-ready software products.</p>
-        </article>
-      </div>
+      {% else %}
+        <p>No articles found in <code>_posts</code> directory.</p>
+      {% endfor %}
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Tiju George. Hosted open-source on GitHub Pages.</p>
-      <div class="footer-links">
-        <a href="https://github.com/tijugeorge" target="_blank">GitHub</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+  </div>
+</section>
