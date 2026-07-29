@@ -1,13 +1,12 @@
 /* Color System & Variables */
 :root {
   --bg-main: #0f172a;       /* Deep Slate Blue */
-  --bg-alt: #1e293b;        /* Card / Section Background */
-  --bg-card: #1e293b;
-  --text-main: #f8fafc;     /* Bright White */
-  --text-muted: #94a3b8;    /* Muted Slate */
+  --bg-alt: #1e293b;        /* Section Card Background */
+  --text-main: #f8fafc;     /* White */
+  --text-muted: #94a3b8;    /* Slate Text */
   --accent: #6366f1;        /* Indigo Accent */
   --accent-hover: #4f46e5;
-  --border: #334155;        /* Subtle Border */
+  --border: #334155;        /* Subtle Slate Border */
   --radius: 8px;
   --max-width: 1080px;
 }
@@ -31,7 +30,6 @@ body {
   padding: 0 24px;
 }
 
-/* Typography */
 h1, h2, h3 {
   color: var(--text-main);
   font-weight: 600;
@@ -47,7 +45,7 @@ p {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(15, 23, 42, 0.9);
   backdrop-filter: blur(8px);
   z-index: 100;
   padding: 16px 0;
@@ -120,7 +118,26 @@ p {
 
 /* Hero Section */
 .hero {
-  padding: 100px 0 80px;
+  padding: 90px 0 70px;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
 }
 
 .badge {
@@ -134,15 +151,14 @@ p {
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin: 20px 0;
-  line-height: 1.2;
+  font-size: 2.6rem;
+  margin: 18px 0;
+  line-height: 1.25;
 }
 
 .hero-sub {
-  font-size: 1.2rem;
-  max-width: 680px;
-  margin-bottom: 32px;
+  font-size: 1.15rem;
+  margin-bottom: 28px;
 }
 
 .hero-cta {
@@ -152,7 +168,7 @@ p {
 
 /* Layout Sections */
 .section {
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 .alt-bg {
@@ -162,12 +178,12 @@ p {
 }
 
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
+  font-size: 1.75rem;
+  margin-bottom: 6px;
 }
 
 .section-sub {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 /* Grids & Cards */
@@ -195,10 +211,6 @@ p {
 .card:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
-}
-
-.card-featured {
-  background-color: #0f172a;
 }
 
 .card-tag {
@@ -235,12 +247,22 @@ p {
   color: var(--accent);
 }
 
-/* Posts */
+/* Post Cards */
 .post-card {
   background: var(--bg-main);
   padding: 24px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
+}
+
+.post-card h3 a {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-card h3 a:hover {
+  color: var(--accent);
 }
 
 .post-date {
@@ -250,6 +272,7 @@ p {
 
 .post-card h3 {
   margin-top: 6px;
+  margin-bottom: 8px;
 }
 
 /* Footer */
